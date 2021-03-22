@@ -1,6 +1,18 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<h3 align="center">
+  My Github Explorer
+</h3>
+
+
+## About project
+
+Developed on the Ignite classes to show a ,list with my github projects.
+
+## Technologies
+
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Available Scripts
 

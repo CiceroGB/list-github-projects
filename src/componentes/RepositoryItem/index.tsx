@@ -1,21 +1,33 @@
 
-const repository = {
-    name: 'unform',
-    description: 'Forms in React',
-    link: 'https://github.com/unform/unform'
+
+export interface Repository {
+    name: string;
+    description: string;
+    link: string;
+}
+interface RepositoryItemProps {
+    repository: Repository;
 }
 
 
 
-export function RepositoryItem() {
+const RepositoryItem: React.FC<RepositoryItemProps> = ({ repository }) => {
+
     return (
 
-        <section className="repository-list">
-            <h1>
-                Lista de Repositorios
-            </h1>
 
-        </section>
+        <li>
+            <strong>{repository.name ?? 'Default'} </strong>
+            <p> {repository.description}</p>
+            <a href={repository.link}>
+                Acessar repository
+        </a>
+        </li>
+
     )
 
+
+
 }
+
+export default RepositoryItem;

@@ -1,8 +1,9 @@
+import { RepositoryList } from './componentes/RepositoryList';
 import './styles/global.css';
 
 export function App() {
   return (
-    <h1> online</h1>
+    <RepositoryList />
   );
 }
 

@@ -3,7 +3,7 @@ import './style.css';
 export interface Repository {
     name: string;
     description: string;
-    link: string;
+    html_url: string;
 }
 interface RepositoryItemProps {
     repository: Repository;
@@ -11,15 +11,15 @@ interface RepositoryItemProps {
 
 
 
-const RepositoryItem: React.FC<RepositoryItemProps> = ({ repository }) => {
+export function RepositoryItem(props: RepositoryItemProps) {
 
     return (
 
 
         <li>
-            <strong>{repository.name ?? 'Default'} </strong>
-            <p> {repository.description}</p>
-            <a href={repository.link}>
+            <strong>{props.repository.name ?? 'Default'} </strong>
+            <p> {props.repository.description}</p>
+            <a href={props.repository.html_url}>
                 Acessar repository
         </a>
         </li>
@@ -29,5 +29,3 @@ const RepositoryItem: React.FC<RepositoryItemProps> = ({ repository }) => {
 
 
 }
-
-export default RepositoryItem;

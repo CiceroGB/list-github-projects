@@ -1,4 +1,6 @@
-import RepositoryItem  from "../RepositoryItem";
+import RepositoryItem from "../RepositoryItem";
+
+import './style.css';
 
 
 const repository = {

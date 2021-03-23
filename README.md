@@ -7,7 +7,7 @@
 
 ### About project
 
-Developed on the Ignite classes to show a ,list with my github projects.
+Developed on the Ignite classes to show a list of my GitHub projects.
 
 ###  Technologies
 
